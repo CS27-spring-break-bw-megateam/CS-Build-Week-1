@@ -1,0 +1,12 @@
+psycopg2-binary
+Django
+postgres
+djangorestframework
+python-decouple
+django-rest-auth
+django-allauth
+pusher
+django-cors-headers
+gunicorn
+django-on-heroku
+django-rest-api
