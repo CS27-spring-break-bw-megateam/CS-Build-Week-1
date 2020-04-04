@@ -1,0 +1,1 @@
+pipenv install -d --pre black pylint pytest flake8 psycopg2-binary django postgres djangorestframework python-decouple django-rest-auth django-allauth pusher django-cors-headers gunicorn django-on-heroku django-rest-api 
