@@ -65,3 +65,14 @@ def move(request):
 def say(request):
     # IMPLEMENT
     return JsonResponse({'error':"Not yet implemented"}, safe=True, status=500)
+
+# for heroku
+#@app.route('/prefab_analytic_bar_yearly', methods=['GET'])
+# for aws
+#@application.route('/prefab_analytic_bar_yearly', methods=['GET'])
+
+@csrf_exempt
+@api_view(["GET"])
+def say(maps):
+    output_prefab1 = open('prefab_rooms_doors.json','r').read()
+    return output_prefab1
