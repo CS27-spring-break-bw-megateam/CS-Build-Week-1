@@ -1,10 +1,16 @@
 [[source]]
+name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
-name = "pypi"
 
-[packages]
+[dev-packages]
+black = "*"
+pylint = "*"
+pytest = "*"
+flake8 = "*"
+psycopg2-binary = "*"
 django = "*"
+postgres = "*"
 djangorestframework = "*"
 python-decouple = "*"
 django-rest-auth = "*"
@@ -12,15 +18,13 @@ django-allauth = "*"
 pusher = "*"
 django-cors-headers = "*"
 gunicorn = "*"
-django-heroku = "*"
+django-on-heroku = "*"
 django-rest-api = "*"
-numpy = "*"
-heroku = "*"
-psycopg2-binary = "*"
-dj-database-url = "*"
-whitenoise = "*"
 
-[dev-packages]
+[packages]
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
