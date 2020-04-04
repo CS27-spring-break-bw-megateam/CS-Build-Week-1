@@ -73,6 +73,6 @@ def say(request):
 
 @csrf_exempt
 @api_view(["GET"])
-def map():
+def map(request):
     output_prefab1 = open('prefab_rooms_doors.json','r').read()
     return output_prefab1
