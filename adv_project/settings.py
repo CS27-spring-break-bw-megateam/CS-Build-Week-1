@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
-import django_on_heroku
+import django_heroku
 from rest_framework.authentication import SessionAuthentication, BasicAuthentication, TokenAuthentication
 import os
 from decouple import config
@@ -150,4 +150,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-django_on_heroku.settings(locals())
+django_heroku.settings(locals())
